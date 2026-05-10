@@ -77,6 +77,14 @@
     animation: pulse-ring 3s ease-in-out infinite;
   }
 
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
+  }
+
   @keyframes pulse-ring {
     0%, 100% { box-shadow: 0 0 0 0 rgba(125,211,252,0.12); }
     50% { box-shadow: 0 0 0 14px rgba(125,211,252,0); }
@@ -240,9 +248,11 @@
 
 <div class="container">
 
-  <div class="avatar">Ik</div>
+  <div class="avatar">
+    <img src="logo.png" alt="IkurdishI logo">
+  </div>
 
-  <div class="name">IkurdishI</span></div>
+  <div class="name">IkurdishI</div>
 
   <div class="roles">
     <span class="r1">developer</span>
